@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    --color1: #D8DBEC;
+    --color2: #FFFFFF50;
+}
+body{
+    background-image: url(../assets/images/desktop-bg.jpg);
+    background-size: cover;
+}
+.navbar{
+    background-color: var(--color1);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 50px;
+    border-top: 1px solid lightgray;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Segoe UI';
+    font-size: small;
+}
+.startbar{
+    width: 10vw;
+    height: 100%;
+}
+.centerbar{
+    height: 100%;
+    width: 35vw;
+}
+.endbar{
+    height: 100%;
+    width: 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.timebar{
+    width: 5vw;
+    margin-right: 1rem;
+}
+.onit:hover{
+    border-radius: 5px;
+    background-color: var(--color2);
+}
+
+#datetime {
+    text-align: right;
+    line-height: 21px;
+    margin-left: 0.5vw;
+}
+
+.bi{
+    font-size: 1.2rem;
+}
+
+.extra{
+    width: 5vw;
+    line-height: 50px;
+}
