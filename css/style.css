@@ -4,7 +4,7 @@
   --color1: #DAE1F1;
   --color2: #FFFFFF70;
   --color3: #55F;
-  --color4: bisque;
+  --color4: #F4F9C3;
 }
 
 * {
@@ -12,7 +12,17 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
-body {
+body{
+  background-color: var(--color4);
+}
+
+/* Desktop version */
+.desktop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   background-image: url(../assets/images/desktop-bg.jpg);
   background-size: cover;
 }
@@ -182,4 +192,9 @@ i {
   margin-bottom: 0px;
   color: var(--color1);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+/* Mobile version */
+.mobile{
+  text-align: center;
 }
