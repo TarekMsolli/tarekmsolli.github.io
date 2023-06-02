@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap');
 *{
     box-sizing: border-box;
     --color1: #DAE1F1;
     --color2: #FFFFFF70;
+    --color3: #55F;
+    --color4: bisque;
     font-family: 'Segoe UI';
 }
 body{
@@ -59,11 +62,79 @@ i{
     transform: translateY(150%);
     transition: all 0.4s ease;
 }
+.work-container{
+    opacity: 0;
+    position: fixed;
+    left: 20vw;
+    top: 5vh;
+    width: 60vw;
+    height: 80vh;
+    background: var(--color1);
+    border-radius: 15px;
+    transform: translateY(150%);
+    transition: all 0.4s ease;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
 .popped{
     transform: translateY(0%);
     opacity: 1;
+    z-index: -2;
 }
-.sa7a-ashref{
-    position: absolute;
-    bottom: 1rem;
+.latest-work{
+    border-radius: 5%;
+    width: 40vw;
+}
+.card-text{
+    font-size: small;
+}
+.work-card{
+    width: 30%;
+    padding: 0;
+}
+.ramzi{
+    height:200px;
+    width: 350px;
+    position: fixed;
+    right: 0rem;
+    bottom: 0rem;
+    z-index: -1;
+    transform: translateY(100%);
+    transition: all 0.4s ease;
+}
+.ramzi-up{
+    transform: translateY(0%);
+}
+.ramzi-says{
+    font-family: 'Poppins';
+    background-color: var(--color3);
+    color: white;
+    /* border: 1px solid gray; */
+    font-size: small;
+    height: fit-content;
+    border-radius: 10px;
+    text-align: left;
+    padding: 0.54vw;
+}
+.ramzi-says b{
+    color:  var(--color4);
+}
+
+.chat-bump{
+    width: 5px;
+    height: 15px;
+    background-color: var(--color3);
+    position: relative;
+    right: 5.5%;
+    top: 30%;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+.ramzi-face{
+    background: url('/assets/images/ramzi.png');
+    background-size: cover;
+
+}
+a{
+    color:  var(--color4);
 }

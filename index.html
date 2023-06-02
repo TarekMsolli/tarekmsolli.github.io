@@ -35,7 +35,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col">
                 <div class="skill select p-2">
                     <div class="programming-languages">
                         <b>Programming laguages:</b> C, Python, C#, C++, Java, Javascript, Typescript
@@ -44,7 +44,7 @@
                         <b>Web developement frameworks:</b> Angular
                     </div>
                     <div class="database-management">
-                        <b>Database management:</b> XAMPP
+                        <b>Database management:</b> SQL, PHP
                     </div>
                     <div class="operating-systems">
                         <b>Operating systems:</b> Windows, Linux
@@ -62,14 +62,66 @@
             <div class="sa7a-ashref">sa7a ashref</div>
         </div>
     </div>
+    <div id="work" class="work-container pt-2 shadow">
+        <div class="row p-3">
+            <div class="col-3">
+                <b>Social links</b>
+                <ul class="my-3">
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>LinkedIn</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+            <div class="col-9">
+                <div class="row">
+                    <img src="assets/images/desktop-bg.jpg" alt="">
+                </div>
+                <div class="row px-3 mt-2">
+                    <div class="col bg-white p-2">
+                        <b class="row px-3">Talented friends I recommend</b>
+                        <div class="row px-3 mt-2">
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="row px-3 mt-2">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-1">
+                    <div class="card col m-1 work-card">
+                        <img src="assets/images/preview.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h6 class="card-title">Work #1</h6>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card col m-1 work-card">
+                        <img src="assets/images/preview.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h6 class="card-title">Work #2</h6>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card col m-1 work-card">
+                        <img src="assets/images/preview.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h6 class="card-title">Work #3</h6>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="taskbar row d-flex align-items-center">
         <div class="col-4">21°C</div>
         <div class="col-4 d-flex align-items-center">
-            <div id="cv-toggleButton" class="select p-2 mx-1 icon">
+            <div id="cv-toggleButton" class="select p-2 mx-1 icon" onclick="toggleCV('cv')">
                 <img src="assets/images/Windows_11.png" width="26" alt="">
             </div>
             <div class="col-5 mx-1">
-                <input type="text" class="form-control searchbar input-sm">
+                <input type="text" class="form-control searchbar input-sm" placeholder="Check out my work!" onclick="toggleCV('work')">
             </div>
             <div class="select p-2 mx-1 icon">
                 <img src="assets/images/fileexplorer.png" width="26" alt="">
@@ -99,6 +151,12 @@
                 <div id="time"></div>
                 <div id="date"></div>
             </div>
+        </div>
+    </div>
+    <div class="ramzi row p-3" id="ramzi">
+        <div class="ramzi-says col" id="ramzi-says"></div>
+        <div class="chat-bump"></div>
+        <div class="ramzi-face col">
         </div>
     </div>
     <script src="js/app.js"></script>
