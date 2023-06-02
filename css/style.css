@@ -48,7 +48,7 @@ i{
     user-select: none;
 }
 .cv-container{
-    opacity: 1;
+    opacity: 0;
     position: fixed;
     left: 20vw;
     top: 5vh;
