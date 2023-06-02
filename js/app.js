@@ -10,6 +10,7 @@ function toggleCV (target){
   }
   display.classList.toggle('popped');
 }
+
 // This function displays current time HH:MM and date DD/MM/YYYY seperated into 2 divs 
 function displayDateTime() {
     var timeElement = document.getElementById('time');
