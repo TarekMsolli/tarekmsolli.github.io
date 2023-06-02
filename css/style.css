@@ -2,6 +2,7 @@
     box-sizing: border-box;
     --color1: #DAE1F1;
     --color2: #FFFFFF70;
+    font-family: 'Segoe UI';
 }
 body{
     background-image: url(../assets/images/desktop-bg.jpg);
@@ -44,4 +45,21 @@ i{
 }
 .icon{
     height: 100%;
+    user-select: none;
+}
+.cv-container{
+    opacity: 1;
+    position: fixed;
+    left: 20vw;
+    top: 5vh;
+    width: 60vw;
+    height: 80vh;
+    background: var(--color1);
+    border-radius: 15px;
+    transform: translateY(150%);
+    transition: all 0.4s ease;
+}
+.popped{
+    transform: translateY(0%);
+    opacity: 1;
 }
