@@ -164,3 +164,22 @@ i {
 .expected-graduation {
   text-align: center;
 }
+
+.pdf-file{
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width: 64px;
+  height: fit-content;
+  text-align: center;
+  padding: 5px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.file-name{
+  font-size: 0.8vw;
+  margin-bottom: 0px;
+  color: var(--color1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
