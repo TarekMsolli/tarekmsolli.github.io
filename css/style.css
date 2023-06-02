@@ -135,6 +135,15 @@ i{
     background-size: cover;
 
 }
-a{
+.ramzi-says a{
     color:  var(--color4);
+}
+.college{
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: 'Poppins';
+    text-align: center;
+}
+.expected-graduation{
+    text-align: center;
 }
