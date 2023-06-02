@@ -131,7 +131,7 @@ i {
 }
 
 .ramzi-up {
-  transform: translateY(0%);
+  transform: translateY(-10%);
 }
 
 .ramzi-says {
@@ -173,6 +173,10 @@ i {
   font-size: 2vw;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.college-city {
   text-align: center;
 }
 

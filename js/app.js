@@ -1,4 +1,4 @@
-const TOOLTIP = ['Clicking on the start button will show you a resume of <b>Tarek</b>.', 'Clicking on the searchbar will show you a list of <b>Tarek</b>`s latest work.', '<b>Tarek</b> has a friend called <b>Ahmed</b> who designs video-games check out his <a target="_blank" href="https://carthagea.itch.io/">page</a>.', '<b>Tarek</b> has a talented friend called <b>Ashref</b>, you can visit his site <a target="_blank" href="https://ashref.tn">here</a>.', 'Adding a drop of water next to your pizza slice and heating in it in a pan will make it taste fresh🍕!'];
+const TOOLTIP = ['Clicking on the start button 🪟 will show you a resume of <b>Tarek</b>.', 'Clicking on the searchbar will show you a list of <b>Tarek</b>`s latest work.', '<b>Tarek</b> has a friend called <b>Ahmed</b> who designs video-games check out his <a target="_blank" href="https://carthagea.itch.io/">page</a>.', '<b>Tarek</b> has a talented friend called <b>Ashref</b>, you can visit his site <a target="_blank" href="https://ashref.tn">here</a>.', 'Adding a drop of water next to your pizza slice and heating in it in a pan will make it taste fresh🍕!'];
 
 function toggleCV (target){
   let display = document.getElementById(target);
@@ -13,27 +13,27 @@ function toggleCV (target){
 
 // This function displays current time HH:MM and date DD/MM/YYYY seperated into 2 divs 
 function displayDateTime() {
-    var timeElement = document.getElementById('time');
-    var dateElement = document.getElementById('date');
-    var currentDate = new Date();
+    let timeElement = document.getElementById('time');
+    let dateElement = document.getElementById('date');
+    let currentDate = new Date();
   
-    var timeOptions = {
+    let timeOptions = {
       hour: '2-digit',
       minute: '2-digit',
       hour12: false
     };
   
-    var dateOptions = {
+    let dateOptions = {
       day: '2-digit',
       month: '2-digit',
       year: 'numeric'
     };
   
-    var formattedTime = currentDate.toLocaleTimeString(undefined, timeOptions);
-    var formattedDate = currentDate.toLocaleDateString(undefined, dateOptions);
+    let formattedTime = currentDate.toLocaleTimeString(undefined, timeOptions);
+    let formattedDate = currentDate.toLocaleDateString(undefined, dateOptions);
 
     // By default the date function uses MM/DD/YYYY so we have to rearrange them like this
-    var dateItems = formattedDate.split('/');
+    let dateItems = formattedDate.split('/');
     formattedDate = dateItems[1] + '/' + dateItems[0] + '/' + dateItems[2];
   
     timeElement.textContent = formattedTime;
@@ -56,4 +56,4 @@ displayDateTime();
 setInterval(displayDateTime, 1000);
 
 
-setInterval(toggleRamzi, 5000);
+setInterval(toggleRamzi, 8000);
