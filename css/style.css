@@ -76,7 +76,8 @@ i {
 }
 
 .cv-container,
-.work-container {
+.work-container,
+.not-ready {
   opacity: 0;
   position: fixed;
   left: 20vw;
@@ -87,11 +88,16 @@ i {
   border-radius: 15px;
   transform: translateY(150%);
   transition: all 0.4s ease;
+  z-index: -1;
 }
 
 .work-container {
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+.not-ready h3{
+  font-family: 'Poppins';
 }
 
 .popped {
@@ -105,6 +111,23 @@ i {
   width: 40vw;
 }
 
+.recommendation{
+  background-color: var(--color1);
+  border: 1 black solid;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+}
+
+.recommendation:hover{
+  color: var(--color3);
+}
+
+.friendlink{
+  text-decoration: none;
+  color: black;
+}
+
 .card-text {
   font-size: small;
 }
@@ -115,13 +138,13 @@ i {
   transition: all 0.4s ease;
 }
 
-.work-card:hover {
+.float:hover {
   transform: translateY(-5%);
 }
 
 .ramzi {
-  height: 200px;
-  width: 350px;
+  height: 250px;
+  width: 390px;
   position: fixed;
   right: 0rem;
   bottom: 0rem;
